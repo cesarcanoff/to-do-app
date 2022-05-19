@@ -1,18 +1,3 @@
-/*
-================================================================================
-|  SAUDAÇÕES VISITANTE, ESTÁ TUDO CERTO CONTIGO? ESPERO QUE SIM!               |
-|  ESSE É APENAS UM PROJETO QUE EU RESOLVI FAZER NA RAÇA, ENTÃO POSSA CONTER   |
-|  SOLUÇÕES QUE NÃO SÃO AS MAIS OTIMIZADAS, EU PROCUREI APENAS FAZER FUNCIONAR.|
-|                                                                              |
-|  O ARRAY FOI USADO APENAS PARA TRANSPORTAR OS VALORES, ENTÃO NÃO FIZ QUESTÃO |
-|  DE MANTER ELE ITERADO COM OS VALORES NO FINAL DA FUNÇÃO [addTask].          |
-|                                                                              |
-|  ESSE PROJETO SERÁ FUTURAMENTE SUBSTITUÍDO POR UM TO-DO APP EM REACT/NODE.   |
-|                                                                              |
-|  ** COM OS MELHORES DESEJOS A TI, CÉSAR CANOFF <3 **                         |
-================================================================================
-*/
-
 var buttonAddTask = document.getElementById("action");
 buttonAddTask.addEventListener("click", addTask);
 const listHTML = document.getElementById("list-tasks");
@@ -48,8 +33,8 @@ function innerTask(arrayList) {
 function insertHTML(element) {
   listHTML.innerHTML += `
   <li onclick="taskDelete(this)">
-     <input type="checkbox" />
-     <span>${element}</span>
+     <input id="checkbox" type="checkbox" />
+     <label for="checkbox">${element}</label>
    </li>
    `;
 }

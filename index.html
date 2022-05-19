@@ -14,23 +14,25 @@
           <h1>To Do App</h1>
         </header>
         <div class="input-add-task">
-          <textarea
+          <input
+            type="text"
             id="task"
             maxlength="30"
             required
             placeholder="Your new Task"
-          ></textarea>
-          <input type="submit" id="action" value="Add" />
-        </div>
+          />
+          <input type="submit" id="action" value="+" />
+        </div> <!--input-add-task-->
+
         <div class="list-all-tasks">
           <div class="title-list-all-tasks">
             <h3>To Do</h3>
-          </div>
+          </div><!--title-list-all-tasks-->
           <div class="tasks">
             <ul id="list-tasks"></ul>
-          </div>
-        </div>
-      </div>
+          </div><!--tasks-->
+        </div><!--list-all-tasks-->
+      </div> <!--container-app-->
     </main>
     <script src="js/script.js"></script>
   </body>
